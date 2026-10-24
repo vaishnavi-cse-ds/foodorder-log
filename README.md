@@ -1,16 +1,140 @@
-# React + Vite
+🍽️ Food Order Log
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Track your cravings. Manage your orders. Keep your food expenses organized.
 
-Currently, two official plugins are available:
+🍽️ Ready to explore?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 "VISIT FOOD ORDER LOG" (https://foodorder-log.vercel.app/)
 
-## React Compiler
+🔗 🚀 Live Demo: "Open Food Order Log" (https://foodorder-log.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+«Explore the live application and manage your food orders directly from your browser!»
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🌟 About the Project
+
+Food Order Log is a web application designed to help users record, organize, and manage their food orders in one place. It provides a simple, visually appealing interface for tracking restaurant orders, monitoring bills, and managing order details.
+
+Whether you're ordering biryani, pizza, noodles, or desserts, Food Order Log helps you keep track of your food expenses effortlessly.
+
+✨ Features
+
+- 🍕 Food Menu: Explore a variety of dishes from different cuisines.
+- ➕ Add Orders: Record food orders with restaurant or dish name, bill amount, cuisine, delivery status, and order date.
+- ✏️ Edit Orders: Update existing order details whenever needed.
+- 🗑️ Delete Orders: Remove orders you no longer need.
+- 🔍 Cuisine Filtering: Filter orders based on cuisine.
+- 💰 Bill Sorting: Sort orders by bill amount.
+- 📊 Expense Overview: View order statistics and total spending.
+- 🖼️ Food Images: Enjoy a visual interface with food images.
+- 📱 Responsive Design: Access the application from supported desktop and mobile browsers.
+- ☁️ Online Deployment: Access the application through its public URL.
+
+🚀 Try It Now
+
+👉 "OPEN THE LIVE APPLICATION" (https://foodorder-log.vercel.app/)
+
+No local installation is needed to explore the deployed website.
+
+🛠️ Tech Stack
+
+Technology| Purpose
+React| Frontend user interface
+Vite| Frontend development and build tool
+Node.js| Backend runtime
+Express.js| REST API
+MongoDB| Database for storing food orders
+Mongoose| MongoDB object modeling
+Vercel| Frontend deployment
+Render| Backend deployment
+
+🏗️ Project Architecture
+
+Food Order Log
+      |
+      v
+React + Vite Frontend
+      |
+      v
+Express.js REST API
+      |
+      v
+MongoDB Database
+
+The frontend communicates with the backend API to create, retrieve, update, and delete food orders.
+
+📂 Project Structure
+
+foodorder-log/
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── package.json
+│   └── server.js
+│
+└── frontend/
+    ├── src/
+    │   ├── App.jsx
+    │   ├── App.css
+    │   └── main.jsx
+    ├── index.html
+    └── package.json
+
+The directory structure may vary slightly depending on the current repository layout.
+
+⚙️ Run Locally
+
+Prerequisites
+
+- Node.js and npm
+- MongoDB or a MongoDB Atlas database
+- Git
+
+1. Clone the repository
+
+git clone https://github.com/vaishnavi-cse-ds/foodorder-log.git
+cd foodorder-log
+
+2. Start the backend
+
+Open a terminal in the backend directory:
+
+cd backend
+npm install
+
+Configure the required environment variables, including your MongoDB connection string and port, using the variable names expected by your backend.
+
+Start the backend:
+
+node server.js
+
+3. Start the frontend
+
+Open another terminal in the frontend directory:
+
+cd frontend
+npm install
+
+Create a ".env" file in the frontend directory with your local API address:
+
+VITE_API_URL=http://localhost:3000
+
+Start the development server:
+
+npm run dev
+
+Open the local URL displayed in your terminal.
+
+Note: Never commit database credentials, API secrets, or ".env" files containing sensitive values to GitHub.
+
+🎯 Project Goals
+
+- Simplify food order tracking.
+- Help users monitor their food expenses.
+- Demonstrate full-stack web development.
+- Practice REST API integration and database operations.
+- Provide an accessible, user-friendly application.
