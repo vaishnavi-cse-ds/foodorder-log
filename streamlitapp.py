@@ -30,7 +30,7 @@ div.stButton > button {
 # ---------- MongoDB connection ----------
 @st.cache_resource
 def get_collection():
-    uri = st.secrets.get("MONGO_URI", os.getenv("MONGO_URI"))
+    uri = st.secrets.get("MONGODB_URL", os.getenv("MONGODB_URL"))
 
     if not uri:
         raise ValueError("MongoDB connection string is not configured.")
